@@ -15,8 +15,6 @@
 		12E9058F1B411AB80082A096 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12E9058E1B411AB80082A096 /* Images.xcassets */; };
 		12E905921B411AB80082A096 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12E905901B411AB80082A096 /* LaunchScreen.xib */; };
 		12E9059E1B411AB80082A096 /* HelloAnimalsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E9059D1B411AB80082A096 /* HelloAnimalsTests.m */; };
-		12F863D21B413C5C00B1EC9D /* libjre_emul.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12F863CB1B413C5000B1EC9D /* libjre_emul.a */; };
-		7A087BB64B3A3942FFA2696F /* libPods-HelloAnimals.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FF171AD3050F46A0BEBC992 /* libPods-HelloAnimals.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,34 +24,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 12E9057A1B411AB80082A096;
 			remoteInfo = HelloAnimals;
-		};
-		12F863CA1B413C5000B1EC9D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 12F863C21B413C4F00B1EC9D /* JreEmulation.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 06619385155848D70004DAFE;
-			remoteInfo = jre_emul;
-		};
-		12F863CC1B413C5000B1EC9D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 12F863C21B413C4F00B1EC9D /* JreEmulation.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 06ED87B819759EFF00633227;
-			remoteInfo = "JRE JUnit Tests";
-		};
-		12F863CE1B413C5000B1EC9D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 12F863C21B413C4F00B1EC9D /* JreEmulation.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 06459FB11A4220AF00F5ED23;
-			remoteInfo = "jre_emul Tests";
-		};
-		12F863D01B413C5700B1EC9D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 12F863C21B413C4F00B1EC9D /* JreEmulation.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 06619384155848D70004DAFE;
-			remoteInfo = jre_emul;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -73,7 +43,6 @@
 		12E905971B411AB80082A096 /* HelloAnimalsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloAnimalsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		12E9059C1B411AB80082A096 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12E9059D1B411AB80082A096 /* HelloAnimalsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloAnimalsTests.m; sourceTree = "<group>"; };
-		12F863C21B413C4F00B1EC9D /* JreEmulation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JreEmulation.xcodeproj; path = ../../../../../../usr/local/src/j2objc/jre_emul/JreEmulation.xcodeproj; sourceTree = "<group>"; };
 		7FF171AD3050F46A0BEBC992 /* libPods-HelloAnimals.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HelloAnimals.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5F144C357B8390552BABFD1 /* Pods-HelloAnimals.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloAnimals.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloAnimals/Pods-HelloAnimals.debug.xcconfig"; sourceTree = "<group>"; };
 		AE7860C4E10EABF6EB9182FE /* Pods-HelloAnimals.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloAnimals.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloAnimals/Pods-HelloAnimals.release.xcconfig"; sourceTree = "<group>"; };
@@ -84,8 +53,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12F863D21B413C5C00B1EC9D /* libjre_emul.a in Frameworks */,
-				7A087BB64B3A3942FFA2696F /* libPods-HelloAnimals.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,7 +97,6 @@
 		12E9057D1B411AB80082A096 /* HelloAnimals */ = {
 			isa = PBXGroup;
 			children = (
-				12F863C21B413C4F00B1EC9D /* JreEmulation.xcodeproj */,
 				12E905821B411AB80082A096 /* AppDelegate.h */,
 				12E905831B411AB80082A096 /* AppDelegate.m */,
 				12E905851B411AB80082A096 /* MasterViewController.h */,
@@ -171,16 +137,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		12F863C31B413C4F00B1EC9D /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				12F863CB1B413C5000B1EC9D /* libjre_emul.a */,
-				12F863CD1B413C5000B1EC9D /* JRE JUnit Tests.app */,
-				12F863CF1B413C5000B1EC9D /* jre_emul Tests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		73D961D93902DCF154DA5FBE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,7 +162,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				12F863D11B413C5700B1EC9D /* PBXTargetDependency */,
 			);
 			name = HelloAnimals;
 			productName = HelloAnimals;
@@ -260,12 +215,6 @@
 			mainGroup = 12E905721B411AB80082A096;
 			productRefGroup = 12E9057C1B411AB80082A096 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 12F863C31B413C4F00B1EC9D /* Products */;
-					ProjectRef = 12F863C21B413C4F00B1EC9D /* JreEmulation.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				12E9057A1B411AB80082A096 /* HelloAnimals */,
@@ -273,30 +222,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		12F863CB1B413C5000B1EC9D /* libjre_emul.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libjre_emul.a;
-			remoteRef = 12F863CA1B413C5000B1EC9D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		12F863CD1B413C5000B1EC9D /* JRE JUnit Tests.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = "JRE JUnit Tests.app";
-			remoteRef = 12F863CC1B413C5000B1EC9D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		12F863CF1B413C5000B1EC9D /* jre_emul Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "jre_emul Tests.xctest";
-			remoteRef = 12F863CE1B413C5000B1EC9D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		12E905791B411AB80082A096 /* Resources */ = {
@@ -347,7 +272,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -378,11 +302,6 @@
 			isa = PBXTargetDependency;
 			target = 12E9057A1B411AB80082A096 /* HelloAnimals */;
 			targetProxy = 12E905981B411AB80082A096 /* PBXContainerItemProxy */;
-		};
-		12F863D11B413C5700B1EC9D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = jre_emul;
-			targetProxy = 12F863D01B413C5700B1EC9D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -496,7 +415,6 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					/usr/local/src/j2objc/dist/include,
 				);
 				INFOPLIST_FILE = HelloAnimals/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -512,7 +430,6 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					/usr/local/src/j2objc/dist/include,
 				);
 				INFOPLIST_FILE = HelloAnimals/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

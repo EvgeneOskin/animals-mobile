@@ -8,6 +8,7 @@
 
 #import "MasterViewController.h"
 #import "DetailViewController.h"
+#import "Animal.h"
 
 @interface MasterViewController ()
 
@@ -44,6 +45,7 @@
         self.objects = [[NSMutableArray alloc] init];
     }
     [self.objects insertObject:[NSDate date] atIndex:0];
+    ComHelloEoskinHelloanimalsSharedAnimal *animal = [[ComHelloEoskinHelloanimalsSharedAnimal alloc] initWithNSString: @"Hello"];
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
     [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
 }
