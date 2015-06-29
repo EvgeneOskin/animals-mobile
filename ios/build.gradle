@@ -1,0 +1,18 @@
+buildscript {
+    repositories {
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        classpath "gradle.plugin.org.openbakery:xcode-plugin:0.11.2"
+    }
+}
+
+apply plugin: "org.openbakery.xcode-plugin"
+
+xcodebuild {
+    target = 'HelloAnimals'
+}
+
+// xcode will compile and use shared project

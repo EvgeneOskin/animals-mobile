@@ -1,0 +1,31 @@
+buildscript {
+    repositories {
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        classpath "gradle.plugin.com.github.j2objccontrib.j2objcgradle:j2objc-gradle:0.2.2-alpha"
+    }
+}
+
+// The 'java' plugin must be applied before the 'j2objc' plugin
+apply plugin: 'java'
+apply plugin: "com.github.j2objccontrib.j2objcgradle"
+
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+// Plugin settings:
+j2objcConfig {
+    xcodeProjectDir "${projectDir}/../ios" // Xcode workspace directory
+    xcodeTarget "HelloAnimals"  // Xcode application target name
+
+    // Help information on other settings:
+    // https://github.com/j2objc-contrib/j2objc-gradle/blob/master/src/main/groovy/com/github/j2objccontrib/j2objcgradle/J2objcConfig.groovy#L25
+
+    // You must include this call (at the end of j2objcConfig) regardless of settings
+    //finalConfigure()
+}

@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12E905811B411AB80082A096 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E905801B411AB80082A096 /* main.m */; };
+		12E905841B411AB80082A096 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E905831B411AB80082A096 /* AppDelegate.m */; };
+		12E905871B411AB80082A096 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E905861B411AB80082A096 /* MasterViewController.m */; };
+		12E9058A1B411AB80082A096 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E905891B411AB80082A096 /* DetailViewController.m */; };
+		12E9058D1B411AB80082A096 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12E9058B1B411AB80082A096 /* Main.storyboard */; };
+		12E9058F1B411AB80082A096 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12E9058E1B411AB80082A096 /* Images.xcassets */; };
+		12E905921B411AB80082A096 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12E905901B411AB80082A096 /* LaunchScreen.xib */; };
+		12E9059E1B411AB80082A096 /* HelloAnimalsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E9059D1B411AB80082A096 /* HelloAnimalsTests.m */; };
+		12F863D21B413C5C00B1EC9D /* libjre_emul.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12F863CB1B413C5000B1EC9D /* libjre_emul.a */; };
+		7A087BB64B3A3942FFA2696F /* libPods-HelloAnimals.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FF171AD3050F46A0BEBC992 /* libPods-HelloAnimals.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		12E905981B411AB80082A096 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12E905731B411AB80082A096 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12E9057A1B411AB80082A096;
+			remoteInfo = HelloAnimals;
+		};
+		12F863CA1B413C5000B1EC9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12F863C21B413C4F00B1EC9D /* JreEmulation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06619385155848D70004DAFE;
+			remoteInfo = jre_emul;
+		};
+		12F863CC1B413C5000B1EC9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12F863C21B413C4F00B1EC9D /* JreEmulation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06ED87B819759EFF00633227;
+			remoteInfo = "JRE JUnit Tests";
+		};
+		12F863CE1B413C5000B1EC9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12F863C21B413C4F00B1EC9D /* JreEmulation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06459FB11A4220AF00F5ED23;
+			remoteInfo = "jre_emul Tests";
+		};
+		12F863D01B413C5700B1EC9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12F863C21B413C4F00B1EC9D /* JreEmulation.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 06619384155848D70004DAFE;
+			remoteInfo = jre_emul;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		12E9057B1B411AB80082A096 /* HelloAnimals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloAnimals.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		12E9057F1B411AB80082A096 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12E905801B411AB80082A096 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		12E905821B411AB80082A096 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		12E905831B411AB80082A096 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		12E905851B411AB80082A096 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		12E905861B411AB80082A096 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		12E905881B411AB80082A096 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		12E905891B411AB80082A096 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		12E9058C1B411AB80082A096 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		12E9058E1B411AB80082A096 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		12E905911B411AB80082A096 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		12E905971B411AB80082A096 /* HelloAnimalsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloAnimalsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		12E9059C1B411AB80082A096 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12E9059D1B411AB80082A096 /* HelloAnimalsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloAnimalsTests.m; sourceTree = "<group>"; };
+		12F863C21B413C4F00B1EC9D /* JreEmulation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JreEmulation.xcodeproj; path = ../../../../../../usr/local/src/j2objc/jre_emul/JreEmulation.xcodeproj; sourceTree = "<group>"; };
+		7FF171AD3050F46A0BEBC992 /* libPods-HelloAnimals.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HelloAnimals.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5F144C357B8390552BABFD1 /* Pods-HelloAnimals.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloAnimals.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloAnimals/Pods-HelloAnimals.debug.xcconfig"; sourceTree = "<group>"; };
+		AE7860C4E10EABF6EB9182FE /* Pods-HelloAnimals.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloAnimals.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloAnimals/Pods-HelloAnimals.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		12E905781B411AB80082A096 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12F863D21B413C5C00B1EC9D /* libjre_emul.a in Frameworks */,
+				7A087BB64B3A3942FFA2696F /* libPods-HelloAnimals.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12E905941B411AB80082A096 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09C4FE796159AB4CB32DBCA9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7FF171AD3050F46A0BEBC992 /* libPods-HelloAnimals.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		12E905721B411AB80082A096 = {
+			isa = PBXGroup;
+			children = (
+				12E9057D1B411AB80082A096 /* HelloAnimals */,
+				12E9059A1B411AB80082A096 /* HelloAnimalsTests */,
+				12E9057C1B411AB80082A096 /* Products */,
+				73D961D93902DCF154DA5FBE /* Pods */,
+				09C4FE796159AB4CB32DBCA9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		12E9057C1B411AB80082A096 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				12E9057B1B411AB80082A096 /* HelloAnimals.app */,
+				12E905971B411AB80082A096 /* HelloAnimalsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		12E9057D1B411AB80082A096 /* HelloAnimals */ = {
+			isa = PBXGroup;
+			children = (
+				12F863C21B413C4F00B1EC9D /* JreEmulation.xcodeproj */,
+				12E905821B411AB80082A096 /* AppDelegate.h */,
+				12E905831B411AB80082A096 /* AppDelegate.m */,
+				12E905851B411AB80082A096 /* MasterViewController.h */,
+				12E905861B411AB80082A096 /* MasterViewController.m */,
+				12E905881B411AB80082A096 /* DetailViewController.h */,
+				12E905891B411AB80082A096 /* DetailViewController.m */,
+				12E9058B1B411AB80082A096 /* Main.storyboard */,
+				12E9058E1B411AB80082A096 /* Images.xcassets */,
+				12E905901B411AB80082A096 /* LaunchScreen.xib */,
+				12E9057E1B411AB80082A096 /* Supporting Files */,
+			);
+			path = HelloAnimals;
+			sourceTree = "<group>";
+		};
+		12E9057E1B411AB80082A096 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				12E9057F1B411AB80082A096 /* Info.plist */,
+				12E905801B411AB80082A096 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		12E9059A1B411AB80082A096 /* HelloAnimalsTests */ = {
+			isa = PBXGroup;
+			children = (
+				12E9059D1B411AB80082A096 /* HelloAnimalsTests.m */,
+				12E9059B1B411AB80082A096 /* Supporting Files */,
+			);
+			path = HelloAnimalsTests;
+			sourceTree = "<group>";
+		};
+		12E9059B1B411AB80082A096 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				12E9059C1B411AB80082A096 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		12F863C31B413C4F00B1EC9D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				12F863CB1B413C5000B1EC9D /* libjre_emul.a */,
+				12F863CD1B413C5000B1EC9D /* JRE JUnit Tests.app */,
+				12F863CF1B413C5000B1EC9D /* jre_emul Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		73D961D93902DCF154DA5FBE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A5F144C357B8390552BABFD1 /* Pods-HelloAnimals.debug.xcconfig */,
+				AE7860C4E10EABF6EB9182FE /* Pods-HelloAnimals.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		12E9057A1B411AB80082A096 /* HelloAnimals */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12E905A11B411AB80082A096 /* Build configuration list for PBXNativeTarget "HelloAnimals" */;
+			buildPhases = (
+				8A5DFD349766AA595A9382D4 /* Check Pods Manifest.lock */,
+				12E905771B411AB80082A096 /* Sources */,
+				12E905781B411AB80082A096 /* Frameworks */,
+				12E905791B411AB80082A096 /* Resources */,
+				31CD3E1F7647647AF10EE02D /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12F863D11B413C5700B1EC9D /* PBXTargetDependency */,
+			);
+			name = HelloAnimals;
+			productName = HelloAnimals;
+			productReference = 12E9057B1B411AB80082A096 /* HelloAnimals.app */;
+			productType = "com.apple.product-type.application";
+		};
+		12E905961B411AB80082A096 /* HelloAnimalsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12E905A41B411AB80082A096 /* Build configuration list for PBXNativeTarget "HelloAnimalsTests" */;
+			buildPhases = (
+				12E905931B411AB80082A096 /* Sources */,
+				12E905941B411AB80082A096 /* Frameworks */,
+				12E905951B411AB80082A096 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12E905991B411AB80082A096 /* PBXTargetDependency */,
+			);
+			name = HelloAnimalsTests;
+			productName = HelloAnimalsTests;
+			productReference = 12E905971B411AB80082A096 /* HelloAnimalsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		12E905731B411AB80082A096 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Eugene Oskin";
+				TargetAttributes = {
+					12E9057A1B411AB80082A096 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					12E905961B411AB80082A096 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 12E9057A1B411AB80082A096;
+					};
+				};
+			};
+			buildConfigurationList = 12E905761B411AB80082A096 /* Build configuration list for PBXProject "HelloAnimals" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 12E905721B411AB80082A096;
+			productRefGroup = 12E9057C1B411AB80082A096 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 12F863C31B413C4F00B1EC9D /* Products */;
+					ProjectRef = 12F863C21B413C4F00B1EC9D /* JreEmulation.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				12E9057A1B411AB80082A096 /* HelloAnimals */,
+				12E905961B411AB80082A096 /* HelloAnimalsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		12F863CB1B413C5000B1EC9D /* libjre_emul.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libjre_emul.a;
+			remoteRef = 12F863CA1B413C5000B1EC9D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		12F863CD1B413C5000B1EC9D /* JRE JUnit Tests.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "JRE JUnit Tests.app";
+			remoteRef = 12F863CC1B413C5000B1EC9D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		12F863CF1B413C5000B1EC9D /* jre_emul Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "jre_emul Tests.xctest";
+			remoteRef = 12F863CE1B413C5000B1EC9D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		12E905791B411AB80082A096 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12E9058D1B411AB80082A096 /* Main.storyboard in Resources */,
+				12E905921B411AB80082A096 /* LaunchScreen.xib in Resources */,
+				12E9058F1B411AB80082A096 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12E905951B411AB80082A096 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		31CD3E1F7647647AF10EE02D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloAnimals/Pods-HelloAnimals-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A5DFD349766AA595A9382D4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		12E905771B411AB80082A096 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12E905841B411AB80082A096 /* AppDelegate.m in Sources */,
+				12E905871B411AB80082A096 /* MasterViewController.m in Sources */,
+				12E905811B411AB80082A096 /* main.m in Sources */,
+				12E9058A1B411AB80082A096 /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12E905931B411AB80082A096 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12E9059E1B411AB80082A096 /* HelloAnimalsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		12E905991B411AB80082A096 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12E9057A1B411AB80082A096 /* HelloAnimals */;
+			targetProxy = 12E905981B411AB80082A096 /* PBXContainerItemProxy */;
+		};
+		12F863D11B413C5700B1EC9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = jre_emul;
+			targetProxy = 12F863D01B413C5700B1EC9D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		12E9058B1B411AB80082A096 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12E9058C1B411AB80082A096 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		12E905901B411AB80082A096 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12E905911B411AB80082A096 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		12E9059F1B411AB80082A096 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		12E905A01B411AB80082A096 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		12E905A21B411AB80082A096 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5F144C357B8390552BABFD1 /* Pods-HelloAnimals.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/src/j2objc/dist/include,
+				);
+				INFOPLIST_FILE = HelloAnimals/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		12E905A31B411AB80082A096 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE7860C4E10EABF6EB9182FE /* Pods-HelloAnimals.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/src/j2objc/dist/include,
+				);
+				INFOPLIST_FILE = HelloAnimals/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		12E905A51B411AB80082A096 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HelloAnimalsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelloAnimals.app/HelloAnimals";
+			};
+			name = Debug;
+		};
+		12E905A61B411AB80082A096 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HelloAnimalsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelloAnimals.app/HelloAnimals";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12E905761B411AB80082A096 /* Build configuration list for PBXProject "HelloAnimals" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12E9059F1B411AB80082A096 /* Debug */,
+				12E905A01B411AB80082A096 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12E905A11B411AB80082A096 /* Build configuration list for PBXNativeTarget "HelloAnimals" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12E905A21B411AB80082A096 /* Debug */,
+				12E905A31B411AB80082A096 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12E905A41B411AB80082A096 /* Build configuration list for PBXNativeTarget "HelloAnimalsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12E905A51B411AB80082A096 /* Debug */,
+				12E905A61B411AB80082A096 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 12E905731B411AB80082A096 /* Project object */;
+}

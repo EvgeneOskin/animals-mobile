@@ -1,0 +1,12 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '6.0'
+
+target 'HelloAnimals' do
+pod 'j2objc-shared', :path => '/Users/eoskin/projects/hello_animals_mobile/shared/build'
+
+end
+
+target 'HelloAnimalsTests' do
+
+end
+

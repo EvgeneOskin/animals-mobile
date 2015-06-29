@@ -1,0 +1,14 @@
+PODS:
+  - j2objc-shared (1.0)
+
+DEPENDENCIES:
+  - j2objc-shared (from `/Users/eoskin/projects/hello_animals_mobile/shared/build`)
+
+EXTERNAL SOURCES:
+  j2objc-shared:
+    :path: "/Users/eoskin/projects/hello_animals_mobile/shared/build"
+
+SPEC CHECKSUMS:
+  j2objc-shared: 8af96e2c6aae0ac407b1cf71fc704458e6ae5675
+
+COCOAPODS: 0.37.2

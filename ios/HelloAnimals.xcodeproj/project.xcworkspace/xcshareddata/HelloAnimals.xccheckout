@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F58ADC01-2C6F-43F2-B201-C3D2D4E3C0BA</string>
+	<key>IDESourceControlProjectName</key>
+	<string>HelloAnimals</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>BCB5C986D5753F46EA79E749B93E81631853AFE1</key>
+		<string>github.com:EvgeneOskin/hello_animals_mobile.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ios/HelloAnimals.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>BCB5C986D5753F46EA79E749B93E81631853AFE1</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:EvgeneOskin/hello_animals_mobile.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>BCB5C986D5753F46EA79E749B93E81631853AFE1</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BCB5C986D5753F46EA79E749B93E81631853AFE1</string>
+			<key>IDESourceControlWCCName</key>
+			<string>hello_animals_mobile</string>
+		</dict>
+	</array>
+</dict>
+</plist>
