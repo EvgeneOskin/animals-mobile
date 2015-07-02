@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: "/Users/eoskin/projects/hello_animals_mobile/shared/build"
 
 SPEC CHECKSUMS:
-  j2objc-shared: 8af96e2c6aae0ac407b1cf71fc704458e6ae5675
+  j2objc-shared: 3e27353ab7b08efafedd1d908aee95ce1b1f571e
 
 COCOAPODS: 0.37.2
