@@ -62,3 +62,11 @@ dependencies {
   compile 'org.codehaus.groovy:groovy:2.4.0:grooid'
   compile project(':shared')
 }
+
+checkstyle {
+  toolVersion = "6.0"
+}
+
+findbugs {
+  toolVersion = "3.0.0"
+}

@@ -1,5 +1,6 @@
 package com.hello.eoskin.helloanimals.shared;
 
+
 public class Animal {
 
     String name;

@@ -22,8 +22,9 @@ subprojects {
     reportLevel = "high"
     excludeFilter = new File("${project.projectDir}/config/findbugs/findbugs-filter.xml")
     classes = files(
-      ["${project.buildDir}/intermediates/classes/",
-       "${project.buildDir}/classes/"].findAll { file(it).exists() }
+      [project.name == 'android' ?
+       "${project.buildDir}/intermediates/classes/" :
+       "${project.buildDir}/classes/"]
     )
     source 'src'
     include '**/*.java'
@@ -56,8 +57,11 @@ subprojects {
 
   task jdepend(type: JDepend) {
 
-    classesDir = file((["${project.buildDir}/intermediates/classes/",
-                        "${project.buildDir}/classes/"].findAll { file(it).exists() })[0])
+    classesDir = file(
+      project.name == 'android' ?
+      "${project.buildDir}/intermediates/classes/" :
+      "${project.buildDir}/classes/"
+    )
   }
 
 }

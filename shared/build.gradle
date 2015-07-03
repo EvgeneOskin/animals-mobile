@@ -47,3 +47,11 @@ if (isMacOSX()) {
     finalConfigure()
   }
 }
+
+checkstyle {
+  toolVersion = "6.0"
+}
+
+findbugs {
+  toolVersion = "3.0.0"
+}

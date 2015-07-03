@@ -1,0 +1,5 @@
+test:
+  override:
+    - ./gradlew build || ./gradlew build
+    - ./gradlew check
+    - ./gradlew assembleDebug
