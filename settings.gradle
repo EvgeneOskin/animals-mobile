@@ -1,1 +1,12 @@
-include ':android', ':shared', ':ios'
+import org.apache.tools.ant.taskdefs.condition.Os
+
+boolean isMacOSX() {
+  return Os.isName(Os.DARWIN)
+}
+
+include ':android', ':shared'
+
+if (isMacOSX()) {
+  include ':ios'
+} else {
+}
