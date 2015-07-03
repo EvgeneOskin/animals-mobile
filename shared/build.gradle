@@ -1,25 +1,42 @@
-buildscript {
-    repositories {
-        maven {
-            url "https://plugins.gradle.org/m2/"
-        }
-    }
-    dependencies {
-        classpath "gradle.plugin.com.github.j2objccontrib.j2objcgradle:j2objc-gradle:0.2.2-alpha"
-    }
+import org.apache.tools.ant.taskdefs.condition.Os
+
+boolean isMacOSX()  {
+  return Os.isName(Os.DARWIN)
 }
+
+
+buildscript {
+  repositories {
+    maven {
+      url "https://plugins.gradle.org/m2/"
+    }
+  }
+  dependencies {
+    classpath "gradle.plugin.com.github.j2objccontrib.j2objcgradle:j2objc-gradle:0.3.0-alpha"
+  }
+}
+
+apply plugin: 'checkstyle'
+apply plugin: 'findbugs'
+apply plugin: 'pmd'
+apply plugin: 'jdepend'
 
 // The 'java' plugin must be applied before the 'j2objc' plugin
 apply plugin: 'java'
-apply plugin: "com.github.j2objccontrib.j2objcgradle"
 
+check.dependsOn 'checkstyle', 'findbugs', 'pmd', 'jdepend'
 
-dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+if (isMacOSX()) {
+  apply plugin: "com.github.j2objccontrib.j2objcgradle"
 }
 
-// Plugin settings:
-j2objcConfig {
+dependencies {
+  compile fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+if (isMacOSX()) {
+  // Plugin settings:
+  j2objcConfig {
     xcodeProjectDir "${projectDir}/../ios" // Xcode workspace directory
     xcodeTarget "HelloAnimals"  // Xcode application target name
 
@@ -27,5 +44,6 @@ j2objcConfig {
     // https://github.com/j2objc-contrib/j2objc-gradle/blob/master/src/main/groovy/com/github/j2objccontrib/j2objcgradle/J2objcConfig.groovy#L25
 
     // You must include this call (at the end of j2objcConfig) regardless of settings
-    //finalConfigure()
+    finalConfigure()
+  }
 }

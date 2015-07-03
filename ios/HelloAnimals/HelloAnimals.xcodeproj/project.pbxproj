@@ -38,9 +38,6 @@
 		12B55AB91B44F3FD00E49379 /* HelloAnimalsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloAnimalsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		12B55ABE1B44F3FD00E49379 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12B55ABF1B44F3FD00E49379 /* HelloAnimalsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloAnimalsTests.swift; sourceTree = "<group>"; };
-		12B55ACB1B45009100E49379 /* HelloAnimals-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloAnimals-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
-		CAD2C9024D0031CD7C603815 /* Pods-HelloAnimals.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloAnimals.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloAnimals/Pods-HelloAnimals.release.xcconfig"; sourceTree = "<group>"; };
-		CD96B79B6A31F3D56621B0BB /* Pods-HelloAnimals.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloAnimals.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloAnimals/Pods-HelloAnimals.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,12 +61,9 @@
 		12B55A991B44F3FD00E49379 = {
 			isa = PBXGroup;
 			children = (
-				12B55ACB1B45009100E49379 /* HelloAnimals-Bridging-Header.h */,
 				12B55AA41B44F3FD00E49379 /* HelloAnimals */,
 				12B55ABC1B44F3FD00E49379 /* HelloAnimalsTests */,
 				12B55AA31B44F3FD00E49379 /* Products */,
-				52FE7E06D28B09F0726E6287 /* Pods */,
-				D590C70E934A28A6E49F08CB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,22 +115,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		52FE7E06D28B09F0726E6287 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				CD96B79B6A31F3D56621B0BB /* Pods-HelloAnimals.debug.xcconfig */,
-				CAD2C9024D0031CD7C603815 /* Pods-HelloAnimals.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		D590C70E934A28A6E49F08CB /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,11 +122,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12B55AC31B44F3FD00E49379 /* Build configuration list for PBXNativeTarget "HelloAnimals" */;
 			buildPhases = (
-				61D93DFFDD7239CADA2742B2 /* Check Pods Manifest.lock */,
 				12B55A9E1B44F3FD00E49379 /* Sources */,
 				12B55A9F1B44F3FD00E49379 /* Frameworks */,
 				12B55AA01B44F3FD00E49379 /* Resources */,
-				84CA1C446777BA778A2D74DC /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -233,39 +209,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		61D93DFFDD7239CADA2742B2 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		84CA1C446777BA778A2D74DC /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloAnimals/Pods-HelloAnimals-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		12B55A9E1B44F3FD00E49379 /* Sources */ = {
@@ -401,28 +344,21 @@
 		};
 		12B55AC41B44F3FD00E49379 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD96B79B6A31F3D56621B0BB /* Pods-HelloAnimals.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = HelloAnimals/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "HelloAnimals-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		12B55AC51B44F3FD00E49379 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CAD2C9024D0031CD7C603815 /* Pods-HelloAnimals.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = HelloAnimals/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "HelloAnimals-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -479,7 +415,6 @@
 				12B55AC51B44F3FD00E49379 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 		12B55AC61B44F3FD00E49379 /* Build configuration list for PBXNativeTarget "HelloAnimalsTests" */ = {
 			isa = XCConfigurationList;
@@ -488,7 +423,6 @@
 				12B55AC81B44F3FD00E49379 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
