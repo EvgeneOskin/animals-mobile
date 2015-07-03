@@ -16,8 +16,15 @@ buildscript {
   }
 }
 
+apply plugin: 'checkstyle'
+apply plugin: 'findbugs'
+apply plugin: 'pmd'
+apply plugin: 'jdepend'
+
 // The 'java' plugin must be applied before the 'j2objc' plugin
 apply plugin: 'java'
+
+check.dependsOn 'checkstyle', 'findbugs', 'pmd', 'jdepend'
 
 if (isMacOSX()) {
   apply plugin: "com.github.j2objccontrib.j2objcgradle"

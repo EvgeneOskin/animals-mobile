@@ -5,3 +5,59 @@ allprojects {
         jcenter()
     }
 }
+
+subprojects {
+  task checkstyle(type: Checkstyle) {
+    configFile file("${project.projectDir}/config/checkstyle/checkstyle.xml")
+    source 'src'
+    include '**/*.java'
+    exclude '**/gen/**'
+
+    classpath = files()
+  }
+
+  task findbugs(type: FindBugs) {
+    ignoreFailures = true
+    effort = "max"
+    reportLevel = "high"
+    excludeFilter = new File("${project.projectDir}/config/findbugs/findbugs-filter.xml")
+    classes = files(
+      ["${project.buildDir}/intermediates/classes/",
+       "${project.buildDir}/classes/"].findAll { file(it).exists() }
+    )
+    source 'src'
+    include '**/*.java'
+    exclude '**/gen/**'
+
+    reports {
+      xml {
+        destination "${project.buildDir}/reports/findbugs/findbugs.xml"
+        xml.withMessages true
+      }
+    }
+
+    classpath = files()
+  }
+
+  task pmd(type: Pmd) {
+    ruleSetFiles = files("${project.projectDir}/config/pmd/pmd-ruleset.xml")
+    ignoreFailures = true
+    ruleSets = ["java-basic", "java-empty", "java-unnecessary", "java-braces", "java-strings"]
+
+    source 'src'
+    include '**/*.java'
+    exclude '**/gen/**'
+
+    reports {
+      xml.enabled = true
+      html.enabled = false
+    }
+  }
+
+  task jdepend(type: JDepend) {
+
+    classesDir = file((["${project.buildDir}/intermediates/classes/",
+                        "${project.buildDir}/classes/"].findAll { file(it).exists() })[0])
+  }
+
+}

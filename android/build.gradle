@@ -2,6 +2,7 @@
 buildscript {
   repositories {
     jcenter()
+    mavenCentral()
   }
   dependencies {
     classpath 'com.android.tools.build:gradle:1.2.2'
@@ -12,6 +13,12 @@ buildscript {
 apply plugin: 'com.android.application'
 apply plugin: 'groovyx.grooid.groovy-android'
 apply plugin: 'codenarc'
+
+apply plugin: 'checkstyle'
+apply plugin: 'codenarc'
+apply plugin: 'findbugs'
+apply plugin: 'pmd'
+apply plugin: 'jdepend'
 
 android {
   compileSdkVersion 22
@@ -46,6 +53,8 @@ project.androidGroovy {
     targetCompatibility = '1.7'
   }
 }
+
+check.dependsOn 'checkstyle', 'findbugs', 'pmd', 'jdepend'
 
 dependencies {
   compile fileTree(dir: 'libs', include: ['*.jar'])
